@@ -1,0 +1,12 @@
+name: BedrockRank
+author: dokidia
+main: dokidia\McbeRank
+version: 2.1.0
+api:
+- 3.0.0
+website: https://be.diamc.kr/
+description: 서버의 순위를 MCBE Rank API를 통해 불러옵니다
+
+commands:
+  서버순위:
+    description: 서버 순위를 확인합니다
