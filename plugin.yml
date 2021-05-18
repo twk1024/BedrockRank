@@ -1,7 +1,7 @@
 name: BedrockRank
 author: dokidia
 main: dokidia\McbeRank
-version: 2.1.0
+version: 2.2.0
 api:
 - 3.0.0
 website: https://be.diamc.kr/
