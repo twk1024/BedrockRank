@@ -43,15 +43,15 @@ class McbeRank extends PluginBase implements Listener{
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $array) : bool{
         if($cmd->getName() == "서버순위"){
-            $url = 'http://be.diamc.kr:3500/api/servers/diamc.kr:19132' . $this->db['domain'] . ':' . $this->db['port'];
+            $url = 'http://be.diamc.kr:3500/api/servers/' . $this->db['domain'] . ':' . $this->db['port'];
             $data = (array) json_decode(Internet::getURL($url));
             $rank = $data['rank'];
             $online = $data['online'];
             
             if($online == true){
-                $event->getPlayer()->sendMessage('§l§b[ §f알림 §b] §r§f현재 우리 서버의 순위는 §6' . $rank . '위§r§f 입니다! §r(MCBE RANK 기준)');
+                $sender->sendMessage('§l§b[ §f알림 §b] §r§f현재 우리 서버의 순위는 §6' . $rank . '위§r§f 입니다! §r(MCBE RANK 기준)');
             }else{
-                $event->getPlayer()->sendMessage('§l§b[ §f알림 §b] §r§fMCBE Rank에 이 서버가 등록되어 있지 않습니다. https://be.diamc.kr/new 에서 서버를 등록해 주세요.');
+                $sender->sendMessage('§l§b[ §f알림 §b] §r§fMCBE Rank에 이 서버가 등록되어 있지 않습니다. https://be.diamc.kr/new 에서 서버를 등록해 주세요.');
             }
             
         }
