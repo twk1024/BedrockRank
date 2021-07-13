@@ -1,6 +1,6 @@
 # BedrockRank
-MCBE Rank API로부터 당신의 서버 순위를 불러옵니다
-MCBE Rank 웹사이트: https://be.diamc.kr
+- MCBE Rank API로부터 당신의 서버 순위를 불러옵니다
+- MCBE Rank 웹사이트: https://be.diamc.kr
 
 ## 기능
 
